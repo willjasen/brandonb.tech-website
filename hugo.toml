@@ -1,6 +1,6 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'nimbi'
+title = 'brandonb.tech'
 theme = ["github.com/dzello/reveal-hugo"]
 disableKinds = ["sitemap", "RSS"]
 relativeURLs = true
