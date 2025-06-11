@@ -22,3 +22,7 @@ custom_theme = "stylesheets/nimbi.css"
 baseName = "index"
 mediaType = "text/html"
 isHTML = true
+
+[services]
+  [services.googleAnalytics]
+    id = 'G-BZGNL371G8'
