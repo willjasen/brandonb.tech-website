@@ -1,5 +1,5 @@
 +++
-title = "nimbi.it"
+title = "brandonb.tech"
 outputs = ["Reveal"]
 +++
 
