@@ -33,6 +33,6 @@ IT isn’t just about servers and networking, it’s about the people who use it
 
 #### Let's connect
 
-email: [b@brandonb.tech](mailto:b@brandonb.tech)
+[schedule a meeting](https://cal.com/brandonb.tech)
 
 status: [https://status.brandonb.tech](https://status.brandonb.tech)
