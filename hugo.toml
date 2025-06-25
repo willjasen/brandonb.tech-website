@@ -9,6 +9,9 @@ uglyURLs = true
 [markup.goldmark.renderer]
   unsafe = true
 
+[params]
+  Description = "brandonb.tech"
+
 [params.reveal_hugo]
   custom_theme = "stylesheets/nimbi.css"
   #enableSourceMap = true
