@@ -7,21 +7,21 @@ relativeURLs = true
 uglyURLs = true
 
 [markup.goldmark.renderer]
-unsafe = true
+  unsafe = true
 
 [params.reveal_hugo]
-custom_theme = "stylesheets/nimbi.css"
-#enableSourceMap = true
-#custom_theme_compile = true
+  custom_theme = "stylesheets/nimbi.css"
+  #enableSourceMap = true
+  #custom_theme_compile = true
 
 #[reveal_hugo.custom_theme_options]
-#targetPath = "stylesheets/nimbi.css"
-#enableSourceMap = true
+  #targetPath = "stylesheets/nimbi.css"
+  #enableSourceMap = true
 
 [outputFormats.Reveal]
-baseName = "index"
-mediaType = "text/html"
-isHTML = true
+  baseName = "index"
+  mediaType = "text/html"
+  isHTML = true
 
 [services]
   [services.googleAnalytics]
