@@ -31,6 +31,6 @@ IT isn’t just about servers and networking, it’s about the people who use it
 
 ---
 
-#### Let's talk
+#### Let's meet
 
 [schedule a meeting](https://cal.com/brandonb.tech)
