@@ -34,3 +34,8 @@ IT isn’t just about servers and networking, it’s about the people who use it
 #### Let's meet
 
 [schedule a meeting](https://cal.com/brandonb.tech)
+
+
+<!-- Start of brandonb Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=7f79bcb7-98bf-413d-b7cd-9c97d3644c37"> </script>
+<!-- End of brandonb Zendesk Widget script -->
