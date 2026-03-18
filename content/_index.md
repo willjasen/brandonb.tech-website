@@ -3,7 +3,7 @@ title = "nerdhirn"
 outputs = ["Reveal"]
 +++
 
-## nerdhirn
+<h2 style="text-transform: lowercase;">nerdhirn</h2>
 
 making developing and managing IT easy and efficient
 
