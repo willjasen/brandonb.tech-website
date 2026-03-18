@@ -1,5 +1,5 @@
 +++
-title = "brandonb.tech"
+title = "nerdhirn"
 outputs = ["Reveal"]
 +++
 
