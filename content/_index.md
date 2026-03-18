@@ -3,9 +3,11 @@ title = "brandonb.tech"
 outputs = ["Reveal"]
 +++
 
-## brandonb.tech
+## nerdhirn
 
 making developing and managing IT easy and efficient
+
+🤓🧠
 
 ❯❯❯❯
 
