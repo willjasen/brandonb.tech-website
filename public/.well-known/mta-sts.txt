@@ -1,4 +1,5 @@
 version: STLS1
 mode: testing
-mx: *.mail.icloud.com
+mx: mx1.mail.icloud.com
+mx: mx2.mail.icloud.com
 max_age: 604800
