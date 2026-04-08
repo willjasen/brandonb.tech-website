@@ -1,4 +1,4 @@
-version: STLS1
+version: STSv1
 mode: testing
 mx: mx1.mail.icloud.com
 mx: mx2.mail.icloud.com
