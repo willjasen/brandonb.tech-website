@@ -1,5 +1,5 @@
 baseURL = '/'
-languageCode = 'en-us'
+locale = 'en-US'
 title = 'brandonb.tech'
 theme = ["github.com/dzello/reveal-hugo"]
 disableKinds = ["sitemap", "RSS"]
@@ -11,6 +11,7 @@ uglyURLs = true
 
 [params]
   Description = "brandonb.tech"
+  author = "brandonb.tech"
 
 [params.reveal_hugo]
   custom_theme = "stylesheets/nimbi.css"
