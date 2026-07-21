@@ -1,9 +1,10 @@
 +++
-title = "nerdhirn"
-outputs = ["Reveal"]
+title = "Managed IT Automation and Support"
+description = "Make IT easier with practical automation, responsive technical support, efficient computing environments, and scalable problem solving."
+outputs = ["Reveal", "RSS"]
 +++
 
-<h2 style="text-transform: lowercase;">nerdhirn</h2>
+<h1 style="text-transform: lowercase;">nerdhirn</h1>
 
 making developing and managing IT easy and efficient
 

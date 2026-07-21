@@ -1,7 +1,33 @@
 <meta charset="utf-8">
-<title>{{ or .Page.Title .Site.Title }}</title>
-{{ with $.Param "description" }}<meta name="description" content="{{ . }}">{{ end }}
+{{- $siteTitle := .Site.Title -}}
+{{- $tagline := .Site.Params.tagline -}}
+{{- $pageTitle := cond .IsHome (printf "%s | %s" $siteTitle $tagline) (printf "%s | %s" .Title $siteTitle) -}}
+{{- $description := or .Description (.Param "description") .Site.Params.description -}}
+{{- $canonical := cond .IsHome .Site.BaseURL .Permalink -}}
+{{- $image := "" -}}
+{{- with .Params.images }}{{ $image = index . 0 | absURL }}{{ end -}}
+<title>{{ $pageTitle }}</title>
+{{ with $description }}<meta name="description" content="{{ . }}">{{ end }}
+{{ with .Site.Params.keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}
 {{ with $.Param "author" }}<meta name="author" content="{{ . }}">{{ end }}
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{{ $canonical }}">
+<meta property="og:site_name" content="{{ $siteTitle }}">
+<meta property="og:title" content="{{ $pageTitle }}">
+{{ with $description }}<meta property="og:description" content="{{ . }}">{{ end }}
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+<meta property="og:url" content="{{ $canonical }}">
+{{ with $image }}<meta property="og:image" content="{{ . }}">{{ end }}
+<meta name="twitter:card" content="{{ if $image }}summary_large_image{{ else }}summary{{ end }}">
+<meta name="twitter:title" content="{{ $pageTitle }}">
+{{ with $description }}<meta name="twitter:description" content="{{ . }}">{{ end }}
+{{ with $image }}<meta name="twitter:image" content="{{ . }}">{{ end }}
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#111111">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{- if .IsHome }}
+{{- $contactPoint := dict "@type" "ContactPoint" "url" .Site.Params.contactUrl "contactType" "sales and support" -}}
+{{- $service := dict "@context" "https://schema.org" "@type" "ProfessionalService" "name" .Site.Params.businessName "legalName" .Site.Params.businessLegalName "url" .Site.BaseURL "description" $description "slogan" .Site.Params.tagline "areaServed" "United States" "knowsAbout" .Site.Params.keywords "contactPoint" $contactPoint -}}
+<script type="application/ld+json">{{ $service | jsonify | safeJS }}</script>
+{{- end }}

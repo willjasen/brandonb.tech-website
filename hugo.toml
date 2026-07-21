@@ -1,17 +1,30 @@
-baseURL = '/'
+baseURL = 'https://nerdhirn.tech/'
 locale = 'en-US'
-title = 'brandonb.tech'
+title = 'nerdhirn'
 theme = ["github.com/dzello/reveal-hugo"]
-disableKinds = ["sitemap", "RSS"]
+disableKinds = ["taxonomy", "term"]
+enableRobotsTXT = true
 relativeURLs = true
-uglyURLs = true
+uglyURLs = false
 
 [markup.goldmark.renderer]
   unsafe = true
 
 [params]
-  Description = "brandonb.tech"
-  author = "brandonb.tech"
+  description = "nerdhirn helps small teams make IT easier with automation, friendly technical support, efficient computing environments, and scalable problem solving."
+  author = "Brandon B"
+  businessName = "nerdhirn"
+  businessLegalName = "nerdhirn.tech"
+  tagline = "Managed IT automation and friendly technical support"
+  contactUrl = "https://cal.com/brandonb.tech"
+  keywords = [
+    "managed IT support",
+    "IT automation",
+    "technical support",
+    "computing environments",
+    "small business IT",
+    "end-user support"
+  ]
 
 [params.reveal_hugo]
   custom_theme = "stylesheets/nimbi.css"
